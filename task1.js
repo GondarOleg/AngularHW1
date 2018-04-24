@@ -10,14 +10,14 @@ feedbacks = [
  ];
 
 var occ = 0;
-var id;
+var user_id;
 
 for(let feedback of feedbacks){
 		var elOcc = feedbacks.filter(x => x.user_id === feedback.user_id).length;
 	if( elOcc > occ){
 		occ = elOcc;
-		id = feedback.id;
+		user_id = feedback.user_id;
 	}
 }
 
-console.log(id);
+console.log(user_id);
